@@ -1,0 +1,141 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: 'Fjalla One', sans-serif;
+	background-color: #d9d9d9;
+}
+
+div#container{
+	width: 50%;
+	height: 100%;
+	margin: 0px auto 0px auto;
+	background-color: white;
+}
+
+header#head{
+	position: relative;
+	width: 100%;
+	height: 100px;
+}
+
+header#head > h1{
+	font-family: 'Fjalla One', sans-serif;
+	font-size: 36pt;
+	padding: 20px;
+	position: fixed;
+	cursor: pointer;
+}
+
+header#head h1 > a{
+	text-decoration: none;
+	color: black;
+}
+
+nav#navegacao ul{
+	margin: 5px 0px 10px 20px;
+}
+
+nav#navegacao ul li{
+	list-style: none;
+	display: inline-block;
+}
+
+nav#navegacao ul li a{
+	text-decoration: none;
+	background-color: #4d4dff;
+	color: black;
+	border-radius: 5px;
+	padding-left: 100px;
+	padding-bottom: 5px;
+	padding-top: 5px;   
+}
+
+nav#navegacao ul li a:hover{
+	background-color: #3333ff;
+}
+
+nav#navegacao ul li a:active{
+	background-color: green;
+}
+
+section#content{
+	position: relative;
+	width: 675px;
+	height: 220px;
+	margin-left: 230px;
+}
+
+section#content button{
+	cursor: pointer;
+	padding: 10px;
+	margin: 0px 0px 0px 2px;
+	border-radius: 4px;
+	font-size: 20px;
+	font-weight: bold;
+	color: white; 	
+}
+
+section#content > h2{
+	font-size: 95px;
+}
+
+section#content button#start{
+	background-color: #00cc00;	
+}
+
+section#content button#start:hover{
+	background-color: #00b300;
+}
+
+section#content button#stop{
+	background-color: #ff0000;
+}
+
+section#content button#stop:hover{
+	background-color: #cc0000;
+}
+
+section#content button#reset{
+	background-color: #000099;
+}
+
+section#content button#reset:hover{
+	background-color: #000066;
+}
+
+section#extra-information{
+	height: 180px;
+	
+}
+
+section#extra-information > p{
+	padding: 20px;
+	font-family: 'Pathway Gothic One', sans-serif;
+	font-size: 22px;
+	text-align: justify;
+}
+
+section#extra-information p > a{
+	text-decoration: none;
+	color: black;
+}
+
+footer#foot{
+	position: relative;
+	height: 112px;
+	width: 1000x;
+	background-color: #b3b3b3;
+}
+
+footer#foot p{
+	text-align: center;
+	font-size: 16px;
+	padding: 15px;
+}
+
+footer#foot div{
+	margin-left: 330px; 
+}
