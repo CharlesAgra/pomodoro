@@ -35,30 +35,33 @@ header#head h1 > a{
 }
 
 nav#navegacao ul{
-	margin: 5px 0px 10px 20px;
+	margin: 5px 0px 20px 20px;
 }
 
 nav#navegacao ul li{
 	list-style: none;
-	display: inline-block;
+	display: inline-block;  
 }
 
 nav#navegacao ul li a{
 	text-decoration: none;
-	background-color: #4d4dff;
+	background-color: #80d4ff;
 	color: black;
-	border-radius: 5px;
-	padding-left: 100px;
+	border-radius: 2px;
+	padding-left: 140px;
 	padding-bottom: 5px;
-	padding-top: 5px;   
+	padding-top: 5px;
+	 
 }
 
 nav#navegacao ul li a:hover{
-	background-color: #3333ff;
+	background-color: #1ab2ff;
+	text-decoration: underline;
+	transition: 1s;
 }
 
 nav#navegacao ul li a:active{
-	background-color: green;
+	background-color: #1ab2ff;
 }
 
 section#content{
@@ -78,7 +81,7 @@ section#content button{
 	color: white; 	
 }
 
-section#content > h2{
+section#content > p{
 	font-size: 95px;
 }
 
@@ -138,4 +141,8 @@ footer#foot p{
 
 footer#foot div{
 	margin-left: 330px; 
+}
+
+footer#foot div >  a{
+	color: black;
 }

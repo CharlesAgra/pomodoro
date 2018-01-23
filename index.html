@@ -17,14 +17,14 @@
 
 		<nav id="navegacao">
 			<ul>
-				<li><a href="#">Pomodoro</a></li>
-				<li><a href="#" onclick="changeLink()">Short Break</a></li>
-				<li><a href="#" onclick="changeLinkTwo()">Long Break</a></li>
+				<li><a href="#" id="pomodoro" onclick="pomodoro()">Pomodoro</a></li>
+				<li><a href="#" id="short-break" onclick="shortBreak()">Short Break</a></li>
+				<li><a href="#" id="long-break" onclick="longBreak()">Long Break</a></li>
 			</ul>
 		</nav>
 
 		<section id="content">
-			<h2 id="timer">25:00</h2><br>
+			<p id="timer">25:00</p><br>
 			<button type="submit" id="start" onclick="startTimer()">Start</button>
 			<button type="submit" id="stop" onclick="stopTimer()">Stop</button>
 			<button type="submit" id="reset" onclick="resetTimer()">Reset</button>
