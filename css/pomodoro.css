@@ -48,7 +48,8 @@ nav#navegacao ul li a{
 	background-color: #80d4ff;
 	color: black;
 	border-radius: 2px;
-	padding-left: 140px;
+	padding-left: 70px;
+	padding-right: 70px;
 	padding-bottom: 5px;
 	padding-top: 5px;
 	 
@@ -73,10 +74,11 @@ section#content{
 
 section#content button{
 	cursor: pointer;
-	padding: 10px;
-	margin: 0px 0px 0px 2px;
-	border-radius: 4px;
-	font-size: 20px;
+	padding: 15px;
+	margin: 0px 0px 0px 4px;
+	border-radius: 10px;
+	border: 1px solid gray;
+	font-size: 15px;
 	font-weight: bold;
 	color: white; 	
 }
@@ -144,5 +146,9 @@ footer#foot div{
 }
 
 footer#foot div >  a{
-	color: black;
+	color: #008080;
+}
+
+footer#foot div >  a:hover{
+	color: #00b3b3;
 }

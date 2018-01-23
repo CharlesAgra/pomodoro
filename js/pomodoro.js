@@ -11,7 +11,7 @@ var shortBreakFoiClicado;
 var longBreakFoiClicado;
 
 var audio = document.createElement('audio');
-audio.src = './hey-brother.mp3';
+audio.src = './mega-alarme.mp3';
 
 var pomodoroId = document.querySelector('#pomodoro');
 var shortBreakId = document.querySelector('#short-break');
