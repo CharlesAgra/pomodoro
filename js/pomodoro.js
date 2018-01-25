@@ -2,23 +2,28 @@ var tag = document.querySelector('#timer');
 var buttonOne = document.querySelector('#start');
 var buttonTwo = document.querySelector('#stop');
 var buttonThree = document.querySelector('#reset');
-
-var seconds;
-var minutes;
-var interval;
-var pomodoroFoiClicado;
-var shortBreakFoiClicado;
-var longBreakFoiClicado;
-
-var audio = document.createElement('audio');
-audio.src = './mega-alarme.mp3';
-
 var pomodoroId = document.querySelector('#pomodoro');
 var shortBreakId = document.querySelector('#short-break');
 var longBreakId = document.querySelector('#long-break');
 
+var seconds;
+var minutes;
+var interval;
+
+var pomodoroFoiClicado;
+var shortBreakFoiClicado;
+var longBreakFoiClicado;
+var btnStart = false;
+
+
+var audio = document.createElement('audio');
+audio.src = './mega-alarme.mp3';
+
 function startTimer(){
-	interval = setInterval(timerIt, 1000);
+	if(btnStart == false){
+		btnStart = true;
+		interval = setInterval(timerIt, 1000);
+	}
 }
 
 function timerIt(){
@@ -54,6 +59,7 @@ function verify(segundos, minutos){
 
 function stopTimer(){
 	clearInterval(interval);
+	btnStart = false;
 }
 
 function resetTimer(){
@@ -82,6 +88,14 @@ function pomodoro(){
 	shortBreakFoiClicado = false;
 	longBreakFoiClicado = false;
 
+	document.getElementById('start').disabled=false;
+	document.getElementById('stop').disabled=false;
+	document.getElementById('reset').disabled=false;
+
+	pomodoroId.style.backgroundColor = '#1ab2ff';
+	shortBreakId.style.backgroundColor = '#80d4ff';
+	longBreakId.style.backgroundColor = '#80d4ff';
+
 	startTimer();
 }
 
@@ -92,6 +106,14 @@ function shortBreak(){
 	pomodoroFoiClicado = false;
 	shortBreakFoiClicado = true;
 	longBreakFoiClicado = false;
+
+	document.getElementById('start').disabled=false;
+	document.getElementById('stop').disabled=false;
+	document.getElementById('reset').disabled=false;
+	
+	pomodoroId.style.backgroundColor = '#80d4ff';
+	shortBreakId.style.backgroundColor = '#1ab2ff';
+	longBreakId.style.backgroundColor = '#80d4ff';
 
 	startTimer();
 }
@@ -104,5 +126,13 @@ function longBreak(){
 	shortBreakFoiClicado = false;
 	longBreakFoiClicado = true;
 
+	document.getElementById('start').disabled=false;
+	document.getElementById('stop').disabled=false;
+	document.getElementById('reset').disabled=false;
+	
+	pomodoroId.style.backgroundColor = '#80d4ff';
+	shortBreakId.style.backgroundColor = '#80d4ff';
+	longBreakId.style.backgroundColor = '#1ab2ff';
+	
 	startTimer();
 }

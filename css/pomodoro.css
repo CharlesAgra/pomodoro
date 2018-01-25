@@ -1,6 +1,7 @@
 *{
 	margin: 0;
 	padding: 0;
+
 }
 
 body{
@@ -61,29 +62,26 @@ nav#navegacao ul li a:hover{
 	transition: 1s;
 }
 
-nav#navegacao ul li a:active{
-	background-color: #1ab2ff;
-}
-
 section#content{
-	position: relative;
 	width: 675px;
 	height: 220px;
-	margin-left: 230px;
 }
 
 section#content button{
 	cursor: pointer;
-	padding: 15px;
-	margin: 0px 0px 0px 4px;
-	border-radius: 10px;
-	border: 1px solid gray;
-	font-size: 15px;
+	width: 150px;
+	height: 50px;
+	padding: 10px;
+	margin-left: 54px;
+	border-radius: 5px;
+	border: 2px solid black;
+	font-size: 18px;
 	font-weight: bold;
 	color: white; 	
 }
 
 section#content > p{
+	text-align: center;
 	font-size: 95px;
 }
 
@@ -146,9 +144,10 @@ footer#foot div{
 }
 
 footer#foot div >  a{
-	color: #008080;
+	color: black;
 }
 
 footer#foot div >  a:hover{
-	color: #00b3b3;
+	transition: 1s;
+	color: white;
 }

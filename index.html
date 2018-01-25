@@ -2,6 +2,11 @@
 <html lang="pt-br">
 <head>
 	<meta charset="utf-8"/>
+	<!--A meta rag abaixo fala que a largura da nossa app vai ser igual a largura do dispositivo-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="web app para estudo com métodos">
+	<meta name="keywords" content="Pomodoro, temporizador, contador">
+	<meta name="author" content="Charles Agra">
 	<title>Pomodoro timer</title>
 	<link rel="stylesheet" type="text/css" href="css/pomodoro.css">
 	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
@@ -25,9 +30,9 @@
 
 		<section id="content">
 			<p id="timer">25:00</p><br>
-			<button type="submit" id="start" onclick="startTimer()">Start</button>
-			<button type="submit" id="stop" onclick="stopTimer()">Stop</button>
-			<button type="submit" id="reset" onclick="resetTimer()">Reset</button>
+			<button type="submit" id="start" onclick="startTimer()" disabled="disabled">Start</button>
+			<button type="submit" id="stop" onclick="stopTimer()" disabled="disabled">Stop</button>
+			<button type="submit" id="reset" onclick="resetTimer()" disabled="disabled">Reset</button>
 		</section>
 		<section id="extra-information">
 			<p><a href="https://en.wikipedia.org/wiki/Pomodoro_Technique" target="_blank">The Pomodoro Technique is a time management method developed by Francesco Cirillo in the late 1980s. The technique uses a timer to break down work into intervals, traditionally 25 minutes in length, separated by short breaks. These intervals are named pomodoros, the plural in English of the Italian word pomodoro (tomato), after the tomato-shaped kitchen timer that Cirillo used as a university student.</a></p>
